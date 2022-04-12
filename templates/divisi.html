@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Divisi</title>
+  
+  <!-- import bootstrap -->
+  <link rel="stylesheet" href="../assets/style/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/style/style.css">
+
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.php"><img src="assets/images/logo.png" width="100px" alt="" srcset=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="divisi.php">Divisi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="bidangDivisi.php">Bidang Divisi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid d-flex">
+      <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-10 m-3">
+      <h1 class="text-center">DATA DIVISI</h1>
+        INPUT_FORM
+        <table class="table table-info table-stripped" border="1">
+            <tr>
+              <td>No</td>
+              <td>Nama Divisi</td>
+              <td>Action</td>
+            </tr>
+            DATA_TABEL
+        </table>
+   </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
