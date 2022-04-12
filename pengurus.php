@@ -107,6 +107,21 @@ if (isset($_POST['updatePengurus'])) {
 
 }
 
+// if update is clicked
+if(isset($_GET['update'])){
+  $isUpdate = true;
+  
+  $pengurus = new Pengurus($db_host, $db_user, $db_pass, $db_name);
+  $pengurus->open();
+
+  $nim = $_GET['nim'];
+
+  $pengurus->getDetailPengurus($nim);
+
+  $result = $pengurus->getResult();
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -181,7 +196,7 @@ if (isset($_POST['updatePengurus'])) {
                       $result2 = $divisi->getResult();
                     ?>
                     
-                        <option value="<?=$id_bidang?>" name="bidang" <?php echo ($result['id_bidang'] == $id_bidang) ? 'selected="selected"' : ''; ?>><?= $result2['nama_divisi'] .' - '. $jabatan?></option>                    
+                        <option value="<?=$id_bidang?>" name="bidang" <?php if($isUpdate) echo ($result['id_bidang'] == $id_bidang) ? 'selected="selected"' : ''; ?>><?= $result2['nama_divisi'] .' - '. $jabatan?></option>                    
                     <?php
                     }
                     ?>
