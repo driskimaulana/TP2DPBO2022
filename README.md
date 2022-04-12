@@ -6,8 +6,6 @@
 
 #### Home <br> <br>
 
-![alt text](#### Add Pengurus <br> <br>
-
 ![alt text](https://github.com/driskimaulana/TP2DPBO2022/blob/master/ScreenShots/home.png)
 
 #### Add Pengurus <br> <br>
